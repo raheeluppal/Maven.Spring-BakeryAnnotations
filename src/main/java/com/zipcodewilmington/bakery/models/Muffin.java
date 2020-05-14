@@ -18,6 +18,7 @@ public class Muffin {
     public Muffin() {
     }
 
+
     public Muffin(String flavor) {
         this.flavor = flavor;
     }

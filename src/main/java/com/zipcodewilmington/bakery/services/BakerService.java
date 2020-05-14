@@ -2,13 +2,17 @@ package com.zipcodewilmington.bakery.services;
 
 import com.zipcodewilmington.bakery.models.Baker;
 import com.zipcodewilmington.bakery.repositories.BakerRepository;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 
 @Service
 public class BakerService {
+
+
     private BakerRepository repository;
 
+    @Autowired
     public BakerService(BakerRepository repository) {
         this.repository = repository;
     }
